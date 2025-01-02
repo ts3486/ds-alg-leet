@@ -15,6 +15,12 @@ class Array:
         if 0 <= index < len(self.data):
             return self.data[index]
         raise IndexError("Index out of range")
+    
+    def index_of(self, value):
+        for index in range(self.count):
+            if self.data[index] == value:
+                return index
+        raise ValueError(f"{value} is not in the array")
 
     def size(self):
         return len(self.data)
