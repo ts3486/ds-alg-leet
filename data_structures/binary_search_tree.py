@@ -96,6 +96,9 @@ print(tree.lookup(4))
 print(tree.lookup(170))
 
 #Tree where each node has at most 2 children, and the left child is less than the parent, and the right child is greater than the parent
+# 
+#All operations are O(logN) time complexity on average, but can be O(n) in the worst case.
+# 
 # Pros:
 # Most operations are better than O(n) time
 # ordered
