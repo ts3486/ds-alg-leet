@@ -10,3 +10,5 @@ def bubble_sort(arr):
 array = [37, 45, 29, 8, 12, 88, -3]
 bubble_sort(array)
 print(array) # [-3, 8, 12, 29, 37, 45, 88]
+
+#This is o(n^2) time complexity on average. If the list is already sorted, it will be O(n) time complexity.
