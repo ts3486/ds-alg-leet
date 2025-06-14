@@ -2,6 +2,7 @@ from collections import deque
 
 def bfs(graph, start):
     visited = set()  # To keep track of visited nodes
+    # the queue here can become long... if the tree is too wide. 
     queue = deque([start])  # Initialize queue with the start node
     
     while queue:

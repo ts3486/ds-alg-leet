@@ -14,9 +14,10 @@ class HashTable:
         #On average O(1), but worst case O(n) because there could be a key where there is a linnked list and you would have to perform an linked list insertion operation. 
 
     def get(self, key):
-        hashedKey = self.hash(key)
+        hashedKey = self.hash(key) # hash the key
+        
         if self.data[hashedKey] is not None:
-            return self.data[hashedKey][0]
+            return self.data[hashedKey][0] # return the value with the same key.
         raise KeyError("Key not found")
        #On average O(1), but worst case O(n) because there could be a linked list and you will have to travserse through it. 
 
